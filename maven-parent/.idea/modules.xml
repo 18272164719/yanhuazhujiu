@@ -13,10 +13,12 @@
       <module fileurl="file://$PROJECT_DIR$/../maven-service/maven-service.iml" filepath="$PROJECT_DIR$/../maven-service/maven-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-springboot-database/maven-springboot-database.iml" filepath="$PROJECT_DIR$/../maven-springboot-database/maven-springboot-database.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" filepath="$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" filepath="$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-springmvc/maven-springmvc.iml" filepath="$PROJECT_DIR$/../maven-springmvc/maven-springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-web/maven-web.iml" filepath="$PROJECT_DIR$/../maven-web/maven-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/../rpc-client/rpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rpc-server/rpc-server.iml" filepath="$PROJECT_DIR$/../rpc-server/rpc-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../maven-springboot-database/springboot-database.iml" filepath="$PROJECT_DIR$/../maven-springboot-database/springboot-database.iml" />
     </modules>
   </component>
 </project>

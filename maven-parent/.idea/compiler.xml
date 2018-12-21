@@ -21,6 +21,7 @@
         <module name="maven-web" />
         <module name="rpc-client" />
         <module name="rpc-server" />
+        <module name="springboot-database" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
@@ -39,6 +40,7 @@
       <module name="maven-web" target="1.8" />
       <module name="rpc-client" target="1.8" />
       <module name="rpc-server" target="1.8" />
+      <module name="springboot-database" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
