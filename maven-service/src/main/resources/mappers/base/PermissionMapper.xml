@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.dao.IPermissonDao">
+
+    <!--获取权限路径-->
+    <resultMap  type="Resource" id="base">
+        <id column="id" jdbcType="INTEGER"  property="id"></id>
+        <result property="name" column="name" />
+        <result property="url" column="url" />
+        <result property="permCode" column="permCode" />
+    </resultMap>
+
+    <select id="getPermissonByUser"  parameterType="java.lang.Long" resultMap="base">
+        SELECT r.* FROM t_sys_group_user t
+        INNER JOIN t_sys_permission p ON t.groupId = b.groupId
+        INNER JOIN t_sys_resource r ON p.resourceId = r.id
+        WHERE t.userId = #{userId}
+    </select>
+
+</mapper>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file url="file://$PROJECT_DIR$/../maven-restaurant/overlays" />
+    <file type="web" url="file://$PROJECT_DIR$/../maven-httpinvoke-server" />
+    <file type="web" url="file://$PROJECT_DIR$/../maven-mybatis" />
+    <file type="web" url="file://$PROJECT_DIR$/../maven-restaurant" />
+    <file type="web" url="file://$PROJECT_DIR$/../maven-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/../maven-web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-config/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-restaurant/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-springboot-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-springboot-database/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-httpinvoke-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-httpinvoke-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/../maven-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/../rpc-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../rpc-server/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.11.190/testSVN/maven-parent" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../maven-restaurant">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.11.190/testSVN/maven-restaurant" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../maven-service">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.11.190/testSVN/maven-service" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../maven-springboot-database">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.11.190/testSVN/maven-springboot-database" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../maven-springboot-demo">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.11.190/testSVN/maven-springboot-demo" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../maven-web">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="trunkUrl" value="svn://192.168.11.190/testSVN/maven-web" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

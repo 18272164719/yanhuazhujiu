@@ -1,0 +1,332 @@
+2018-12-14 11:01:03,522 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 11:01:03 CST 2018]; root of context hierarchy
+2018-12-14 11:01:03,651 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 11:01:04,545 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/multipleDatasource.xml]
+2018-12-14 11:01:06,027 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-provider.xml]
+2018-12-14 11:01:06,121 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-14 11:01:06,148 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-consumer.xml]
+2018-12-14 11:01:06,172 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/tcc-transaction.xml]
+2018-12-14 11:01:07,904 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Initializing EhCache CacheManager
+2018-12-14 11:01:09,572 [main] INFO  org.mongodb.driver.cluster  - Cluster created with settings {hosts=[192.168.11.200:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=32}
+2018-12-14 11:01:12,472 [cluster-ClusterId{value='5c131cf5dffe231e8897db97', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.connection  - Opened connection [connectionId{localValue:1, serverValue:1}] to 192.168.11.200:27017
+2018-12-14 11:01:12,480 [cluster-ClusterId{value='5c131cf5dffe231e8897db97', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.cluster  - Monitor thread successfully connected to server with description ServerDescription{address=192.168.11.200:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 21]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=679845}
+2018-12-14 11:01:12,883 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2018-12-14 11:01:12,898 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} inited
+2018-12-14 11:01:12,902 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} inited
+2018-12-14 11:01:14,707 [main] INFO  com.gitee.sunchenbin.mybatis.actable.manager.handler.StartUpHandlerImpl  - databaseType=mysql，开始执行mysql的处理方法
+2018-12-14 11:01:15,359 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2018-12-14 11:01:15,360 [main] WARN  org.springframework.context.support.ClassPathXmlApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+2018-12-14 11:01:15,363 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2018-12-14 11:01:15,363 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2018-12-14 11:01:15,366 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2018-12-14 11:01:15,394 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Shutting down EhCache CacheManager
+2018-12-14 11:01:15,464 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet(ServiceBean.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 12 more
+2018-12-14 11:03:08,591 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 11:03:08 CST 2018]; root of context hierarchy
+2018-12-14 11:03:08,673 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 11:03:09,000 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/multipleDatasource.xml]
+2018-12-14 11:03:09,452 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-provider.xml]
+2018-12-14 11:03:09,609 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-14 11:03:09,703 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-consumer.xml]
+2018-12-14 11:03:09,771 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/tcc-transaction.xml]
+2018-12-14 11:03:11,354 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Initializing EhCache CacheManager
+2018-12-14 11:03:12,336 [main] INFO  org.mongodb.driver.cluster  - Cluster created with settings {hosts=[192.168.11.200:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=32}
+2018-12-14 11:03:12,460 [cluster-ClusterId{value='5c131d70dffe232b240cbec1', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.connection  - Opened connection [connectionId{localValue:1, serverValue:2}] to 192.168.11.200:27017
+2018-12-14 11:03:12,463 [cluster-ClusterId{value='5c131d70dffe232b240cbec1', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.cluster  - Monitor thread successfully connected to server with description ServerDescription{address=192.168.11.200:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 21]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=1254963}
+2018-12-14 11:03:12,805 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2018-12-14 11:03:12,819 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} inited
+2018-12-14 11:03:12,824 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} inited
+2018-12-14 11:03:14,114 [main] INFO  com.gitee.sunchenbin.mybatis.actable.manager.handler.StartUpHandlerImpl  - databaseType=mysql，开始执行mysql的处理方法
+2018-12-14 11:03:14,885 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2018-12-14 11:03:14,886 [main] WARN  org.springframework.context.support.ClassPathXmlApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+2018-12-14 11:03:14,888 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2018-12-14 11:03:14,889 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2018-12-14 11:03:14,892 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2018-12-14 11:03:14,897 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Shutting down EhCache CacheManager
+2018-12-14 11:03:14,904 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet(ServiceBean.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 12 more
+2018-12-14 11:16:17,178 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 11:16:17 CST 2018]; root of context hierarchy
+2018-12-14 11:16:17,284 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 11:16:17,620 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/multipleDatasource.xml]
+2018-12-14 11:16:18,351 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-provider.xml]
+2018-12-14 11:16:18,517 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-14 11:16:18,570 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/tcc-transaction.xml]
+2018-12-14 11:16:20,683 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Initializing EhCache CacheManager
+2018-12-14 11:16:21,774 [main] INFO  org.mongodb.driver.cluster  - Cluster created with settings {hosts=[192.168.11.200:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=32}
+2018-12-14 11:16:21,852 [cluster-ClusterId{value='5c132085dffe2342d4913422', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.connection  - Opened connection [connectionId{localValue:1, serverValue:3}] to 192.168.11.200:27017
+2018-12-14 11:16:21,855 [cluster-ClusterId{value='5c132085dffe2342d4913422', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.cluster  - Monitor thread successfully connected to server with description ServerDescription{address=192.168.11.200:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 21]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=1214058}
+2018-12-14 11:16:22,347 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2018-12-14 11:16:22,361 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} inited
+2018-12-14 11:16:22,365 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} inited
+2018-12-14 11:16:23,605 [main] INFO  com.gitee.sunchenbin.mybatis.actable.manager.handler.StartUpHandlerImpl  - databaseType=mysql，开始执行mysql的处理方法
+2018-12-14 11:16:24,199 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-4} inited
+2018-12-14 11:16:24,459 [main] INFO  com.alibaba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: com.test.service.IUserService, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-12-14 11:16:24,634 [main] INFO  com.alibaba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.test.service.IUserService to local registry, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-12-14 11:16:24,635 [main] INFO  com.alibaba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service com.test.service.IUserService to url dubbo://192.168.11.1:20881/com.test.service.IUserService?anyhost=true&application=maven-provider&dubbo=2.5.3&interface=com.test.service.IUserService&loadbalance=leastactive&methods=updateBatch,save,deleteAll,count,listByAll2,update,insert,login,delete,deleteBatch,getById,find,saveBtach,getByName,updateByAll,listByAll&pid=17108&side=provider&timeout=1200000&timestamp=1544757384498, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-12-14 11:16:24,635 [main] INFO  com.alibaba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service com.test.service.IUserService url dubbo://192.168.11.1:20881/com.test.service.IUserService?anyhost=true&application=maven-provider&dubbo=2.5.3&interface=com.test.service.IUserService&loadbalance=leastactive&methods=updateBatch,save,deleteAll,count,listByAll2,update,insert,login,delete,deleteBatch,getById,find,saveBtach,getByName,updateByAll,listByAll&pid=17108&side=provider&timeout=1200000&timestamp=1544757384498 to registry registry://192.168.11.200:2181/com.alibaba.dubbo.registry.RegistryService?application=maven-provider&dubbo=2.5.3&file=/app/msc/1-service-base/dubbo-registry-junit.cache&pid=17108&registry=zookeeper&timeout=100000&timestamp=1544757384480, dubbo version: 2.5.3, current host: 127.0.0.1
+2018-12-14 11:16:24,866 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+com.alibaba.dubbo.rpc.RpcException: Fail to start server(url: dubbo://192.168.11.1:20881/com.test.service.IUserService?anyhost=true&application=maven-provider&channel.readonly.sent=true&codec=dubbo&dubbo=2.5.3&heartbeat=60000&interface=com.test.service.IUserService&loadbalance=leastactive&methods=updateBatch,save,deleteAll,count,listByAll2,update,insert,login,delete,deleteBatch,getById,find,saveBtach,getByName,updateByAll,listByAll&pid=17108&side=provider&timeout=1200000&timestamp=1544757384498) Failed to bind NettyServer on /192.168.11.1:20881, cause: Failed to bind to: /0.0.0.0:20881
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:289)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.openServer(DubboProtocol.java:266)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.export(DubboProtocol.java:253)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:55)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:56)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doLocalExport(RegistryProtocol.java:153)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:107)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:53)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adpative.export(Protocol$Adpative.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:485)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:281)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:242)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:143)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:109)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:393)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:347)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:883)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: com.alibaba.dubbo.remoting.RemotingException: Failed to bind NettyServer on /192.168.11.1:20881, cause: Failed to bind to: /0.0.0.0:20881
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:72)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.<init>(NettyServer.java:63)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyTransporter.bind(NettyTransporter.java:33)
+	at com.alibaba.dubbo.remoting.Transporter$Adpative.bind(Transporter$Adpative.java)
+	at com.alibaba.dubbo.remoting.Transporters.bind(Transporters.java:48)
+	at com.alibaba.dubbo.remoting.exchange.support.header.HeaderExchanger.bind(HeaderExchanger.java:41)
+	at com.alibaba.dubbo.remoting.exchange.Exchangers.bind(Exchangers.java:63)
+	at com.alibaba.dubbo.rpc.protocol.dubbo.DubboProtocol.createServer(DubboProtocol.java:287)
+	... 25 more
+Caused by: org.jboss.netty.channel.ChannelException: Failed to bind to: /0.0.0.0:20881
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:303)
+	at com.alibaba.dubbo.remoting.transport.netty.NettyServer.doOpen(NettyServer.java:94)
+	at com.alibaba.dubbo.remoting.transport.AbstractServer.<init>(AbstractServer.java:67)
+	... 32 more
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.bind(NioServerSocketPipelineSink.java:148)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.handleServerSocket(NioServerSocketPipelineSink.java:100)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketPipelineSink.eventSunk(NioServerSocketPipelineSink.java:74)
+	at org.jboss.netty.channel.Channels.bind(Channels.java:468)
+	at org.jboss.netty.channel.AbstractChannel.bind(AbstractChannel.java:192)
+	at org.jboss.netty.bootstrap.ServerBootstrap$Binder.channelOpen(ServerBootstrap.java:348)
+	at org.jboss.netty.channel.Channels.fireChannelOpen(Channels.java:176)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannel.<init>(NioServerSocketChannel.java:85)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:142)
+	at org.jboss.netty.channel.socket.nio.NioServerSocketChannelFactory.newChannel(NioServerSocketChannelFactory.java:90)
+	at org.jboss.netty.bootstrap.ServerBootstrap.bind(ServerBootstrap.java:282)
+	... 34 more
+2018-12-14 11:23:49,962 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 11:23:49 CST 2018]; root of context hierarchy
+2018-12-14 11:23:50,047 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 11:23:50,405 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/multipleDatasource.xml]
+2018-12-14 11:23:50,899 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-provider.xml]
+2018-12-14 11:23:51,065 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-14 11:23:51,097 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-consumer.xml]
+2018-12-14 11:23:51,170 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/tcc-transaction.xml]
+2018-12-14 11:23:52,941 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Initializing EhCache CacheManager
+2018-12-14 11:23:53,997 [main] INFO  org.mongodb.driver.cluster  - Cluster created with settings {hosts=[192.168.11.200:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=32}
+2018-12-14 11:23:54,179 [cluster-ClusterId{value='5c132249dffe234408563b2d', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.connection  - Opened connection [connectionId{localValue:1, serverValue:4}] to 192.168.11.200:27017
+2018-12-14 11:23:54,183 [cluster-ClusterId{value='5c132249dffe234408563b2d', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.cluster  - Monitor thread successfully connected to server with description ServerDescription{address=192.168.11.200:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 21]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=2139324}
+2018-12-14 11:23:54,565 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2018-12-14 11:23:54,584 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} inited
+2018-12-14 11:23:54,591 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} inited
+2018-12-14 11:23:56,062 [main] INFO  com.gitee.sunchenbin.mybatis.actable.manager.handler.StartUpHandlerImpl  - databaseType=mysql，开始执行mysql的处理方法
+2018-12-14 11:23:56,643 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2018-12-14 11:23:56,645 [main] WARN  org.springframework.context.support.ClassPathXmlApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+2018-12-14 11:23:56,647 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2018-12-14 11:23:56,647 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2018-12-14 11:23:56,653 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2018-12-14 11:23:56,658 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Shutting down EhCache CacheManager
+2018-12-14 11:23:56,667 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet(ServiceBean.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 12 more
+2018-12-14 11:37:14,137 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 11:37:14 CST 2018]; root of context hierarchy
+2018-12-14 11:37:14,253 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 11:37:14,257 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/applicationContext.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:614)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:515)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 13 more
+2018-12-14 12:58:35,529 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@27ddd392: startup date [Fri Dec 14 12:58:35 CST 2018]; root of context hierarchy
+2018-12-14 12:58:35,614 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 12:58:35,618 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/applicationContext.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:614)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:515)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 13 more
+2018-12-14 12:59:06,438 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 12:59:06 CST 2018]; root of context hierarchy
+2018-12-14 12:59:06,521 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 12:59:06,524 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/applicationContext.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:614)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:515)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 13 more
+2018-12-14 13:01:52,380 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 13:01:52 CST 2018]; root of context hierarchy
+2018-12-14 13:01:52,483 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 13:01:52,487 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from class path resource [spring/applicationContext.xml]; nested exception is java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:344)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:181)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:217)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:252)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:129)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:614)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:515)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.io.FileNotFoundException: class path resource [spring/applicationContext.xml] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:330)
+	... 13 more
+2018-12-14 13:15:52,661 [main] INFO  org.springframework.context.support.ClassPathXmlApplicationContext  - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@528931cf: startup date [Fri Dec 14 13:15:52 CST 2018]; root of context hierarchy
+2018-12-14 13:15:52,773 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+2018-12-14 13:15:53,158 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/multipleDatasource.xml]
+2018-12-14 13:15:53,568 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-provider.xml]
+2018-12-14 13:15:53,734 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2018-12-14 13:15:53,864 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [dubbo-consumer.xml]
+2018-12-14 13:15:53,973 [main] INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring/tcc-transaction.xml]
+2018-12-14 13:15:56,049 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Initializing EhCache CacheManager
+2018-12-14 13:15:57,258 [main] INFO  org.mongodb.driver.cluster  - Cluster created with settings {hosts=[192.168.11.200:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=32}
+2018-12-14 13:15:57,373 [cluster-ClusterId{value='5c133c8ddffe2335a4aed9db', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.connection  - Opened connection [connectionId{localValue:1, serverValue:5}] to 192.168.11.200:27017
+2018-12-14 13:15:57,378 [cluster-ClusterId{value='5c133c8ddffe2335a4aed9db', description='null'}-192.168.11.200:27017] INFO  org.mongodb.driver.cluster  - Monitor thread successfully connected to server with description ServerDescription{address=192.168.11.200:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[3, 2, 21]}, minWireVersion=0, maxWireVersion=4, maxDocumentSize=16777216, roundTripTimeNanos=3641118}
+2018-12-14 13:15:57,795 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2018-12-14 13:15:57,807 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} inited
+2018-12-14 13:15:57,812 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} inited
+2018-12-14 13:15:58,983 [main] INFO  com.gitee.sunchenbin.mybatis.actable.manager.handler.StartUpHandlerImpl  - databaseType=mysql，开始执行mysql的处理方法
+2018-12-14 13:15:59,601 [main] INFO  com.alibaba.dubbo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.slf4j.Slf4jLoggerAdapter
+2018-12-14 13:15:59,602 [main] WARN  org.springframework.context.support.ClassPathXmlApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+2018-12-14 13:15:59,604 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-3} closed
+2018-12-14 13:15:59,604 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-2} closed
+2018-12-14 13:15:59,608 [main] INFO  com.alibaba.druid.pool.DruidDataSource  - {dataSource-1} closed
+2018-12-14 13:15:59,611 [main] INFO  org.springframework.cache.ehcache.EhCacheManagerFactoryBean  - Shutting down EhCache CacheManager
+2018-12-14 13:15:59,617 [main] ERROR dubbo.test.DubboProvider  - == DubboProvider context start error:
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.test.service.IUserService': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at dubbo.test.DubboProvider.main(DubboProvider.java:17)
+Caused by: java.lang.IllegalStateException: Duplicate application configs: <dubbo:application name="maven-provider" id="maven-provider" /> and <dubbo:application name="dubbo_consumer" logger="slf4j" id="dubbo_consumer" />
+	at com.alibaba.dubbo.config.spring.ServiceBean.afterPropertiesSet(ServiceBean.java:164)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1687)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1624)
+	... 12 more

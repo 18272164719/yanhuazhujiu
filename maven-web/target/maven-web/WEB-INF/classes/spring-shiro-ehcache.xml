@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache updateCheck="false" name="shiroCache">
+
+    <defaultCache
+            maxElementsInMemory="10000"
+            eternal="false"
+            timeToLiveSeconds="120"
+            overflowToDisk="false"/>
+
+    <cache name="shiro-activeSessionCache"
+           maxElementsInMemory="10000"
+           eternal="false"
+           overflowToDisk="false"
+           timeToLiveSeconds="120"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="10"
+    >
+    </cache>
+</ehcache>

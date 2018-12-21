@@ -1,0 +1,63 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /
+
+#spring 配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.11.200:3306/com.test?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+    initialSize: 1
+    minIdle: 1
+    maxActive: 2
+    maxWait: 1000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    filters: stat,wall,log4j
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  http:
+    encoding:
+      charset: utf-8
+  rabbitmq:
+    host: 192.168.11.200
+    port: 5672
+    username: com.test
+    password: com.test@2018
+  application:
+    name: spirng-boot-rabbitmq-sender
+  messages:
+    basename: i18n/Messages,i18n/Pages
+  jms:
+    pub-sub-domain: false
+  activemq:
+    user: admin
+    password: admin
+    broker-url: tcp://192.168.11.200:61617
+
+queueName: publish.queue
+topicName: publish.topic
+
+
+#rabbitmq相关配置
+
+#mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.test.entity
+  configuration:
+      map-underscore-to-camel-case: true
+
+
+
+

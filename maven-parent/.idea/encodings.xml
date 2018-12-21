@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.." charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-facede" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-httpinvoke-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-httpinvoke-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-mybatis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-restaurant" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-springboot-database" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-springboot-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-springmvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../maven-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../rpc-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../rpc-server" charset="UTF-8" />
+  </component>
+</project>

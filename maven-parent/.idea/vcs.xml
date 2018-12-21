@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../maven-common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../maven-httpinvoke-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../maven-httpinvoke-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../maven-mybatis" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../maven-springmvc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../rpc-client" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../rpc-server" vcs="Git" />
+  </component>
+</project>

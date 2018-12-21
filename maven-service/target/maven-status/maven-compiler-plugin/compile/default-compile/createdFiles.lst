@@ -1,0 +1,16 @@
+com\test\framework\aspect\DataSourceAspect.class
+com\test\framework\datasource\DynamicDataSourceHolder.class
+com\test\TestMongoDB.class
+com\test\TestRedisDao.class
+com\test\service\BaseService.class
+com\test\interceptor\EntityInterceptor.class
+com\test\dao\IUserDao.class
+com\test\service\UserService$1.class
+com\test\redis\EnjoyRedisCacheManager.class
+com\test\service\PermissionService.class
+com\test\TestEhcache.class
+com\test\dao\BaseDao.class
+com\test\framework\datasource\DynamicDataSource.class
+com\test\service\UserService.class
+com\test\framework\aspect\DSParams.class
+com\test\dao\IPermissionDao.class

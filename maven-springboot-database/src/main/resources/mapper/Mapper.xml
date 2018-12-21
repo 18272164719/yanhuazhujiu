@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.mapper.GoodsMapper">
+
+    <select id="selectGoods" parameterType="int" resultType="goods">
+        select * from goods where id = #{id}
+    </select>
+
+    <select id="listGoods" resultType="goods">
+        select * from goods
+    </select>
+
+
+    <update id="buyGoods" parameterType="goods">
+        update goods set num = num -1 where num > 0
+    </update>
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>maven-parent</artifactId>
+        <groupId>com.test</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../maven-parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>maven-facede</artifactId>
+    <packaging>jar</packaging>
+    <version>${maven-facede.version}</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.gitee.sunchenbin.mybatis.actable</groupId>
+            <artifactId>mybatis-enhance-actable</artifactId>
+            <version>${mybatis-enhance-actable.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.test</groupId>
+            <artifactId>maven-common</artifactId>
+            <version>${maven-common.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mengyun</groupId>
+            <artifactId>tcc-transaction-dubbo</artifactId>
+            <version>${tcc-transaction.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mengyun</groupId>
+            <artifactId>tcc-transaction-spring</artifactId>
+            <version>${tcc-transaction.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>

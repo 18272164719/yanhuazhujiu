@@ -1,0 +1,28 @@
+
+
+<button onclick="tt()">aaaaa</button>
+<textarea id="ta"></textarea>
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<script>
+
+
+  
+function tt(){
+	$.ajax({
+		 url:"http://192.168.0.100:8080/medicshop/guest/form.htmlx",
+		 data:{
+			 "a":123
+		 },
+		 type : "POST",
+		 dataType : 'json',
+		 contentType : "application/json",
+		success:function(data){
+			$("#ta").html(data)
+		}	 
+		 
+	 })
+};
+
+
+</script>

@@ -1,0 +1,117 @@
+[
+    {      
+        "parentId": -1,        
+      	"id": 1,
+        "name": "首页", 
+        "RURL": "/member/home.htmlx", 
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": -1,        
+      	"id": 2,
+        "name": "个人信息", 
+        "RURL": null, 
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 2,        
+      	"id": 21,
+        "name": "个人资料", 
+        "RURL": "/member/member.htmlx", 
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 2,        
+      	"id": 22,
+        "name": "安全中心", 
+        "RURL": "/member/safe.htmlx", 
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": -1,        
+      	"id": 3,
+        "name": "业务管理", 
+        "RURL": null, 
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 3,        
+      	"id": 31,
+        "name": "我的推荐", 
+        "RURL": "/member/memberInviter.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 3,        
+      	"id": 32,
+        "name": "我的团队", 
+        "RURL": "/member/memberTree.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 3,        
+      	"id": 33,
+        "name": "注册会员", 
+        "RURL": "/member/reg.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 3,        
+      	"id": 34,
+        "name": "会员升级", 
+        "RURL": "/member/uplevel.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": -1,        
+      	"id": 4,
+        "name": "财务管理", 
+        "RURL": null, 
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 4,        
+      	"id": 41,
+        "name": "拨币申请", 
+        "RURL": "/member/recharge.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 4,        
+      	"id": 42,
+        "name": "提现申请", 
+        "RURL": "/member/withdraw.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 4,        
+      	"id": 43,
+        "name": "积分转换", 
+        "RURL": "/member/integral.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": -1,        
+      	"id": 5,
+        "name": "日志管理", 
+        "RURL": null, 
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 5,        
+      	"id": 51,
+        "name": "奖金日志", 
+        "RURL": "/member/accountLog.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 5,        
+      	"id": 52,
+        "name": "充值日志", 
+        "RURL": "/member/rechargeLog.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 5,        
+      	"id": 53,
+        "name": "提现日志", 
+        "RURL": "/member/withdrawLog.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 5,        
+      	"id": 54,
+        "name": "升级日志", 
+        "RURL": "/member/uplevelLog.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    },{      
+        "parentId": 5,        
+      	"id": 55,
+        "name": "会员注册日志", 
+        "RURL": "/member/regLog.htmlx",
+        "icon": "glyphicon glyphicon-cog"        
+    }
+]

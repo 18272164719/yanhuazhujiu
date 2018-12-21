@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="DEFAULT_COMPILER" value="Eclipse" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="maven-common" />
+        <module name="maven-config" />
+        <module name="maven-facede" />
+        <module name="maven-httpinvoke-client" />
+        <module name="maven-httpinvoke-server" />
+        <module name="maven-mybatis" />
+        <module name="maven-restaurant" />
+        <module name="maven-service" />
+        <module name="maven-springboot-database" />
+        <module name="maven-springboot-demo" />
+        <module name="maven-springmvc" />
+        <module name="maven-web" />
+        <module name="rpc-client" />
+        <module name="rpc-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="maven-common" target="1.8" />
+      <module name="maven-config" target="1.8" />
+      <module name="maven-facede" target="1.8" />
+      <module name="maven-httpinvoke-client" target="1.7" />
+      <module name="maven-httpinvoke-server" target="1.7" />
+      <module name="maven-mybatis" target="1.8" />
+      <module name="maven-parent" target="1.7" />
+      <module name="maven-restaurant" target="1.8" />
+      <module name="maven-service" target="1.8" />
+      <module name="maven-springboot-database" target="1.7" />
+      <module name="maven-springboot-demo" target="1.7" />
+      <module name="maven-springmvc" target="1.8" />
+      <module name="maven-web" target="1.8" />
+      <module name="rpc-client" target="1.8" />
+      <module name="rpc-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
