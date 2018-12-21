@@ -10,13 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list id="ee22b1af-e191-451a-ba20-66d8f02dcfac" name="ignore" comment="ignore" />
-    <list default="true" readonly="true" id="a53ca4c1-27fc-472b-b1c3-7f192166917b" name="Default" comment="ignore">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" readonly="true" id="a53ca4c1-27fc-472b-b1c3-7f192166917b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../maven-restaurant/maven-restaurant.iml" afterPath="$PROJECT_DIR$/../maven-restaurant/maven-restaurant.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../maven-service/maven-service.iml" afterPath="$PROJECT_DIR$/../maven-service/maven-service.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -269,7 +264,7 @@
           <expand>
             <path>
               <item name="maven-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rpc-server" type="462c0819:PsiDirectoryNode" />
+              <item name="maven-parent" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1143,7 +1138,7 @@
       <workItem from="1545319880637" duration="797000" />
       <workItem from="1545320922568" duration="24000" />
       <workItem from="1545396346081" duration="2011000" />
-      <workItem from="1545404878298" duration="165000" />
+      <workItem from="1545404878298" duration="180000" />
     </task>
     <task id="LOCAL-00001">
       <created>1538274023412</created>
@@ -1334,7 +1329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1541843431935</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="ignore">
+      <created>1545405050753</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1545405050753</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1370,7 +1372,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="845669000" />
+    <option name="totallyTimeSpent" value="845684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
