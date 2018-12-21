@@ -3,6 +3,10 @@ package com.test.server;
 import com.test.inter.Boss;
 import com.test.inter.MyBoss;
 
+/**
+ * 服务端的rpc
+ *
+ */
 public class ServerBoss {
 
     public static void main(String[] args) {
