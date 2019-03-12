@@ -28,7 +28,7 @@
     </dependencies>
 
     <build>
-        <finalName>maven-web</finalName>
+        <finalName>maven-springmvc</finalName>
         <resources>
             <resource>
                 <targetPath>${project.build.directory}/classes</targetPath>
