@@ -61,6 +61,7 @@
         <maven-web.version>0.0.1</maven-web.version>
         <maven-springboot>0.0.1</maven-springboot>
         <maven-springcloud>0.0.1</maven-springcloud>
+        <maven-springmvc.version>0.0.1</maven-springmvc.version>
         <shyl-common-util.version>1.0</shyl-common-util.version>
         <shyl-common-web.version>1.1</shyl-common-web.version>
         <shiro.version>1.2.3</shiro.version>
