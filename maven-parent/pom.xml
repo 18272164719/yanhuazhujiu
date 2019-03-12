@@ -19,6 +19,7 @@
         <module>../maven-service</module>
         <module>../maven-common</module>
         <module>../maven-web</module>
+        <module>../maven-springmvc</module>
     </modules>
 
     <repositories>
