@@ -9,7 +9,9 @@ import redis.clients.jedis.exceptions.JedisConnectionException;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 public class RedisUtil {
@@ -23,7 +25,7 @@ public class RedisUtil {
         config.setMaxWaitMillis(100);
         config.setTestOnBorrow(true);
         config.setTestOnReturn(true);
-        JedisPool jedisPool = new JedisPool(config, "192.168.11.190", 6379);
+        JedisPool jedisPool = new JedisPool(config, "192.168.11.200", 6379);
         return jedisPool;
     }
 
@@ -49,6 +51,7 @@ public class RedisUtil {
         JedisConnectionFactory connectionFactory = new JedisConnectionFactory(config);
         connectionFactory.setHostName("192.168.11.200");
         connectionFactory.setPort(6379);
+        connectionFactory.setPassword("");
         connectionFactory.afterPropertiesSet();
         RedisTemplate<Serializable, Object> redisTemplate = new RedisTemplate<>();
         redisTemplate.setConnectionFactory(connectionFactory);
@@ -57,11 +60,35 @@ public class RedisUtil {
     }
 
     public static void main(String[] args) {
+
+        /*Jedis jedis = getJedis();
+        String key = jedis.set("key", "123");
+        System.out.println(jedis.get("key"));*/
         /*List<String> s = new ArrayList<>();
         s.add("a");
         List<String> f = new ArrayList<>();
         f.add("b");*/
         RedisTemplate redisTemplate = getRedisTemplate();
+
+        Map newMap = new HashMap();
+        newMap.put("map3","map3-3");
+        newMap.put("map5","map5-5");
+        redisTemplate.opsForHash().putAll("hashValue",newMap);
+
+        Map map = redisTemplate.opsForHash().entries("hashValue");
+        System.out.println(map.values());
+        /*Boolean a = redisTemplate.opsForValue().setIfAbsent("key123", "");
+        System.out.println(a);
+        Boolean b = redisTemplate.opsForValue().setIfAbsent("key1234", "");
+        System.out.println(b);
+        List<String> keys = new ArrayList<>();
+        keys.add("key123");
+        keys.add("key1234");
+        keys.add("123456");
+        redisTemplate.delete(keys);*/
+
+        /*Object o = redisTemplate.opsForValue().get("key1234");
+        System.out.println(o);*/
         /*redisTemplate.opsForList().leftPush("t",s);
         redisTemplate.opsForList().leftPush("t",f);
         redisTemplate.expire("t",5, TimeUnit.SECONDS);

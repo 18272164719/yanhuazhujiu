@@ -1,6 +1,7 @@
 package com.test.mongodb;
 
 
+import com.mongodb.DB;
 import com.mongodb.util.JSON;
 import net.sf.json.JSONObject;
 import org.springframework.data.mongodb.core.MongoTemplate;
