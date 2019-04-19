@@ -28,7 +28,7 @@ public class TableService extends BaseService<TableVa,Long> implements ITableSer
     @Resource
     public void setTableDao(ITableDao tableDao) {
         this.tableDao = tableDao;
-        super.setBaseDao(tableDao);
+        //super.setBaseDao(tableDao);
     }
 
     @Override

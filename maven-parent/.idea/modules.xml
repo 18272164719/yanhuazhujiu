@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../eurake-client-demo/client-demo.iml" filepath="$PROJECT_DIR$/../eurake-client-demo/client-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../eurake-consumer/eurake-consumer.iml" filepath="$PROJECT_DIR$/../eurake-consumer/eurake-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-common/maven-common.iml" filepath="$PROJECT_DIR$/../maven-common/maven-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-config/maven-config.iml" filepath="$PROJECT_DIR$/../maven-config/maven-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-facede/maven-facede.iml" filepath="$PROJECT_DIR$/../maven-facede/maven-facede.iml" />
@@ -13,11 +15,11 @@
       <module fileurl="file://$PROJECT_DIR$/../maven-service/maven-service.iml" filepath="$PROJECT_DIR$/../maven-service/maven-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-springboot-database/maven-springboot-database.iml" filepath="$PROJECT_DIR$/../maven-springboot-database/maven-springboot-database.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" filepath="$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" filepath="$PROJECT_DIR$/../maven-springboot-demo/maven-springboot-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-springmvc/maven-springmvc.iml" filepath="$PROJECT_DIR$/../maven-springmvc/maven-springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-web/maven-web.iml" filepath="$PROJECT_DIR$/../maven-web/maven-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rpc-client/rpc-client.iml" filepath="$PROJECT_DIR$/../rpc-client/rpc-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rpc-server/rpc-server.iml" filepath="$PROJECT_DIR$/../rpc-server/rpc-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../eurake-server-demo/server-demo.iml" filepath="$PROJECT_DIR$/../eurake-server-demo/server-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../maven-springboot-database/springboot-database.iml" filepath="$PROJECT_DIR$/../maven-springboot-database/springboot-database.iml" />
     </modules>
   </component>

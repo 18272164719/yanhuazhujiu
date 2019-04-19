@@ -15,7 +15,7 @@
     <dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}"/>
 
     <!-- 所有的服务不检查依赖 -->
-    <dubbo:consumer check="false" />
+    <dubbo:consumer check="false" filter="mdc"/>
 
     <!-- 生成远程服务代理，可以和本地bean一样使用demoService -->
     <dubbo:reference loadbalance="${dubbo.loadbalance}" interface="com.test.service.IUserService" id="userService" >

@@ -2,14 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../maven-common" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../maven-httpinvoke-client" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../maven-httpinvoke-server" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../maven-mybatis" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../maven-springboot-database" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../maven-springboot-demo" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../maven-springmvc" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../rpc-client" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../rpc-server" vcs="Git" />
   </component>
 </project>

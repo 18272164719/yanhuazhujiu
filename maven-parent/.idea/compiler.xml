@@ -7,6 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="client-demo" />
+        <module name="eurake-consumer" />
         <module name="maven-common" />
         <module name="maven-config" />
         <module name="maven-facede" />
@@ -21,26 +23,29 @@
         <module name="maven-web" />
         <module name="rpc-client" />
         <module name="rpc-server" />
+        <module name="server-demo" />
         <module name="springboot-database" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
+      <module name="client-demo" target="1.8" />
+      <module name="eurake-consumer" target="1.8" />
       <module name="maven-common" target="1.8" />
       <module name="maven-config" target="1.8" />
       <module name="maven-facede" target="1.8" />
-      <module name="maven-httpinvoke-client" target="1.7" />
-      <module name="maven-httpinvoke-server" target="1.7" />
+      <module name="maven-httpinvoke-client" target="1.8" />
+      <module name="maven-httpinvoke-server" target="1.8" />
       <module name="maven-mybatis" target="1.8" />
-      <module name="maven-parent" target="1.7" />
+      <module name="maven-parent" target="1.8" />
       <module name="maven-restaurant" target="1.8" />
       <module name="maven-service" target="1.8" />
-      <module name="maven-springboot-database" target="1.7" />
-      <module name="maven-springboot-demo" target="1.7" />
+      <module name="maven-springboot-demo" target="1.8" />
       <module name="maven-springmvc" target="1.8" />
       <module name="maven-web" target="1.8" />
       <module name="rpc-client" target="1.8" />
       <module name="rpc-server" target="1.8" />
-      <module name="springboot-database" target="1.7" />
+      <module name="server-demo" target="1.8" />
+      <module name="springboot-database" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
